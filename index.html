@@ -13,7 +13,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- End of importing bootstrap -->
-
     <title>Pablo's KPMG Portfolio Project</title>
 </head>
 
@@ -70,10 +69,24 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Send</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="showMask();">Send</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Allows a confirmation message to appear when contact info is sent! -->
+    <script type="text/javascript">
+        function showMask() {
+            var node = document.getElementById('successAlert')
+            var visibility = node.style.visibility;
+            node.style.visibility = visibility == "visible" ? 'hidden' : "visible"
+        }
+    </script>
+
+    <div class="alert alert-success alert-dismissible" id="successAlert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>Success!</strong> Your contact info has been sent!
     </div>
 
     <!-- Column on left containing photo -->
@@ -85,20 +98,25 @@
     <!-- About me section -->
     <div class="website-text">
         <h1 id="about-me">About me</h1>
-        <p> 
-            Hi there! My name is Pablo Castro and I am a recent graduate with a degree in computer engineering. 
-            I have always been fascinated by the power of technology and the endless possibilities it offers. 
-            I have a strong passion for programming and I am constantly seeking new challenges to enhance my skills and knowledge.
+        <p>
+            Hi there! My name is Pablo Castro and I am a recent graduate with a degree in computer engineering.
+            I have always been fascinated by the power of technology and the endless possibilities it offers.
+            I have a strong passion for programming and I am constantly seeking new challenges to enhance my skills and
+            knowledge.
 
-            During my time in school, I have gained experience in various programming languages such as Python, C++, C# and JavaScript. 
+            During my time in school, I have gained experience in various programming languages such as Python, C++, C#
+            and JavaScript.
             I have also worked on a variety of projects, including emulation, web development, and database management.
         </p>
         <p>
-            In addition to my technical skills, I am a highly motivated and detail-oriented individual. 
-            I have a strong ability to work both independently and in a team environment, and I am always eager to learn and grow.
+            In addition to my technical skills, I am a highly motivated and detail-oriented individual.
+            I have a strong ability to work both independently and in a team environment, and I am always eager to learn
+            and grow.
 
-            I am excited to begin my career as a programmer and to contribute my skills to the ever-evolving world of technology. 
-            Whether it's building complex systems or solving challenging problems, I am up for the task and eager to make an impact.
+            I am excited to begin my career as a programmer and to contribute my skills to the ever-evolving world of
+            technology.
+            Whether it's building complex systems or solving challenging problems, I am up for the task and eager to
+            make an impact.
         </p>
 
         <h1 id="experience">Experience</h1>
@@ -117,9 +135,11 @@
 
         <h5>Scrap-tf-trading-card-scrapper</h5>
         <p>
-            ● Will scrap trading prices off https://steamcommunity.com/market/ and compare with prices of cards on https://scrap.tf/
+            ● Will scrap trading prices off https://steamcommunity.com/market/ and compare with prices of cards on
+            https://scrap.tf/
             <br>
-            ● Trading cards on scrap.tf can be occasionally bought and then re-sold on Steam for a small profit. That profit can then be used to buy more trading cards or anything on Steam.
+            ● Trading cards on scrap.tf can be occasionally bought and then re-sold on Steam for a small profit. That
+            profit can then be used to buy more trading cards or anything on Steam.
             <br>
             ● Written with Python and uses Selenium for web scraping purposes.
         </p>
