@@ -1,0 +1,25 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.left-column {
+    /* margin: auto; */
+    width: 50%;
+    padding: 5%;
+    position: fixed;
+    float: left;
+    top: 5%;
+    text-align: center;
+}
+
+#personal-photo {
+    width: 100%;
+}
+
+.website-text {
+    float: right;
+    width: 50%;
+    margin-top: 6%;
+}
