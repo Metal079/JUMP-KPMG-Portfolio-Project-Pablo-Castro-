@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center" id="navbar">
         <ul class="navbar-nav">
             <a class="navbar-brand" href="#">
-                <img src="./images/me.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                <img src="./images/me.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
             </a>
             <li class="nav-item">
                 <a class="nav-link" href="#about-me">About Me</a>
@@ -61,11 +61,14 @@
                 <!-- Modal body -->
                 <div class="contact-me-body">
                     <form action="">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                        <br><br>
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
                     </form>
                 </div>
 
@@ -87,6 +90,7 @@
         }
     </script>
 
+    <!-- Confirmation message on contact info (hidden) -->
     <div class="alert alert-success alert-dismissible" id="successAlert">
         <button type="button" class="btn-close" onclick="showMask();"></button>
         <strong>Success!</strong> Your contact info has been sent!
@@ -98,7 +102,7 @@
         <p>Pablo Castro</p>
     </div>
 
-    <!-- About me section -->
+    <!-- Text section on right-->
     <div class="website-text">
         <h1 id="about-me">About me</h1>
         <p>
@@ -138,31 +142,57 @@
 
         <h5>Scrap-tf-trading-card-scrapper</h5>
         <p>
-            ● Will scrap trading prices off https://steamcommunity.com/market/ and compare with prices of cards on
-            https://scrap.tf/
+        <ul>
+            <li>
+                Will scrap trading prices off https://steamcommunity.com/market/ and compare with prices of cards on
+                https://scrap.tf/
+            </li>
             <br>
-            ● Trading cards on scrap.tf can be occasionally bought and then re-sold on Steam for a small profit. That
-            profit can then be used to buy more trading cards or anything on Steam.
+            <li>
+                Trading cards on scrap.tf can be occasionally bought and then re-sold on Steam for a small profit. That
+                profit can then be used to buy more trading cards or anything on Steam.
+            </li>
             <br>
-            ● Written with Python and uses Selenium for web scraping purposes.
+            <li>
+                Written with Python and uses Selenium for web scraping purposes.
+            </li>
+        </ul>
         </p>
+        <br>
 
         <h5>Chip-8 Emulator</h5>
         <p>
-            ● Emulator for an old 1980's computer system!
+        <ul>
+            <li>
+                Emulator for an old 1980's computer system!
+            </li>
             <br>
-            ● Written using Python with Pygame for graphics
+            <li>
+                Written using Python with Pygame for graphics
+            </li>
             <br>
-            ● Able to emulate several games to a fully playable status
+            <li>
+                Able to emulate several games to a fully playable status
+            </li>
+        </ul>
         </p>
+        <br>
 
         <h5>GameBoy_maui Emulator</h5>
         <p>
-            ● Emulator for the GameBoy/GameBoyColor
+        <ul>
+            <li>
+                Emulator for the GameBoy/GameBoyColor
+            </li>
             <br>
-            ● Implemented using C# and .net MAUI for UI and graphics
+            <li>
+                Implemented using C# and .net MAUI for UI and graphics
+            </li>
             <br>
-            ● Implemented opcodes and hardware to simulate GameBoy logic
+            <li>
+                Implemented opcodes and hardware to simulate GameBoy logic
+            </li>
+        </ul>
         </p>
     </div>
 </body>
